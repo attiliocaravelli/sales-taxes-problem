@@ -62,27 +62,22 @@ because I considered the use of this application with big amount of data
 I created two error classes in order to handle malformed inputs:
 	BasketMalformedError and ItemMalformedError
 
-2.
-	The rounding rules for decimal numbers
+2.	The rounding rules for decimal numbers
 	In order to avoid the lost of precisions I used the BigDecimal class
 
-3.
-	In order to decide if an item is exempt or not from the sales taxes I created 
+3.	In order to decide if an item is exempt or not from the sales taxes I created 
 	cache implemented by a Map. Obviously a better solution would be a DB. 
 	I simulated this behaviour by creating a data generator for the only exempt 
 	products mentioned on the above test case
 
-4.
-	Generality of the solution
+4.	Generality of the solution
 	I create a small Main (even if It was not required) in order to test
 	my solution with an input as File
 	In my Unit Tests the solution is checked by a generator of fake data string
 
-5. 
-	Application won't be used in multi-thread environments like WebApps or Mobile Apps
+5. 	Application won't be used in multi-thread environments like WebApps or Mobile Apps
 	
-6.
-	Log4J
+6.	Log4J
 	TDD -> starting on the design of the tests
 	UML Diagrams Not required → Not implemented
 	Text messages translation Not required → Not implemented
